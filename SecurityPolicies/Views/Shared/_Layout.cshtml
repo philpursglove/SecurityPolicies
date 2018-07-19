@@ -16,13 +16,37 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Security Policies", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SRI <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@Url.Action("WorkingLink", "SRI", new {area = "SRI"})">Working Links</a></li>
+                            <li><a href="@Url.Action("BrokenLink", "SRI", new {area = "SRI"})">Broken Links</a></li>
+                            <li><a href="@Url.Action("BrokenLinkWithFallback", "SRI", new {area = "SRI"})">Broken Link with Fallback</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CSP <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@Url.Action("WorkingLink", "CSP", new {area = "CSP"})">Working Links</a></li>
+                            <li><a href="@Url.Action("BrokenLink", "CSP", new {area = "CSP"})">Broken Links</a></li>
+                            <li><a href="@Url.Action("BrokenLinkWithFallback", "CSP", new {area = "CSP"})">Broken Link with Fallback</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FP <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@Url.Action("UseBrowserFeatures", "FP", new {area = "FP"})">Using Browser Features</a></li>
+                            <li><a href="@Url.Action("BlockedBrowserFeatures", "FP", new {area = "FP"})">Blocked Browser Features</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
