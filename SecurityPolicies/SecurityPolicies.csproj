@@ -172,6 +172,7 @@
     <Content Include="Areas\SRI\Views\SRI\WorkingLink.cshtml" />
     <Content Include="Areas\SRI\Views\SRI\BrokenLink.cshtml" />
     <Content Include="Areas\SRI\Views\SRI\BrokenLinkWithFallback.cshtml" />
+    <Content Include="ReadMe.md" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
