@@ -147,6 +147,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\FP\Controllers\FPController.cs" />
+    <Compile Include="Areas\FP\FPAreaRegistration.cs" />
     <Compile Include="Areas\SRI\Controllers\SRIController.cs" />
     <Compile Include="Areas\SRI\SRIAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -173,6 +175,11 @@
     <Content Include="Areas\SRI\Views\SRI\BrokenLink.cshtml" />
     <Content Include="Areas\SRI\Views\SRI\BrokenLinkWithFallback.cshtml" />
     <Content Include="ReadMe.md" />
+    <Content Include="Areas\FP\Views\web.config" />
+    <Content Include="Areas\FP\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\FP\Views\FP\UseBrowserFeatures.cshtml" />
+    <Content Include="Areas\FP\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\FP\Views\FP\BlockedBrowserFeatures.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -201,6 +208,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\FP\Models\" />
     <Folder Include="Areas\SRI\Models\" />
     <Folder Include="Areas\SRI\Views\Shared\" />
     <Folder Include="Models\" />

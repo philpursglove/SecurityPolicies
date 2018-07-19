@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "BlockedBrowserFeatures";
+}
+
+<h2>BlockedBrowserFeatures</h2>
+
+<div class="row">
+    This page has the same code as the UseBrowserFeatures page, but also has a Feature-Policy header that denies any element on the page from using the camera; the permission denial is shown in the browser console.
+</div>
+
+<video autoplay></video>
+
+@section scripts
+{
+    <script>
+        const constraints = {
+            video: true
+        };
+
+        const video = document.querySelector('video');
+
+        navigator.mediaDevices.getUserMedia(constraints).
+            then((stream) => { video.srcObject = stream });
+    </script>
+}

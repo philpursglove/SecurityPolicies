@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "UseBrowserFeatures";
+}
+
+<h2>Use Browser Features</h2>
+
+This page automatically activates the user's camera and streams the result to a &lt;video&gt; element on the page.
+
+<video autoplay></video>
+
+@section scripts
+{
+    <script>
+        const constraints = {
+            video: true
+        };
+
+        const video = document.querySelector('video');
+
+        navigator.mediaDevices.getUserMedia(constraints).
+            then((stream) => {video.srcObject = stream});
+    </script>
+}
