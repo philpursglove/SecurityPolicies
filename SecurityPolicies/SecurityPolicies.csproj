@@ -147,6 +147,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\CSP\Controllers\CSPController.cs" />
+    <Compile Include="Areas\CSP\CSPAreaRegistration.cs" />
     <Compile Include="Areas\FP\Controllers\FPController.cs" />
     <Compile Include="Areas\FP\FPAreaRegistration.cs" />
     <Compile Include="Areas\SRI\Controllers\SRIController.cs" />
@@ -180,6 +182,7 @@
     <Content Include="Areas\FP\Views\FP\UseBrowserFeatures.cshtml" />
     <Content Include="Areas\FP\Views\_ViewStart.cshtml" />
     <Content Include="Areas\FP\Views\FP\BlockedBrowserFeatures.cshtml" />
+    <Content Include="Areas\CSP\Views\web.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -208,6 +211,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\CSP\Models\" />
+    <Folder Include="Areas\CSP\Views\CSP\" />
+    <Folder Include="Areas\CSP\Views\Shared\" />
     <Folder Include="Areas\FP\Models\" />
     <Folder Include="Areas\SRI\Models\" />
     <Folder Include="Areas\SRI\Views\Shared\" />
