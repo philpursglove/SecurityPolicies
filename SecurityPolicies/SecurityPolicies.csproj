@@ -188,6 +188,12 @@
     <Content Include="Areas\CSP\Views\_ViewStart.cshtml" />
     <Content Include="Areas\CSP\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\CSP\Views\CSP\ReportOnly.cshtml" />
+    <Content Include="Areas\CSP\Views\CSP\ScriptSource.cshtml" />
+    <Content Include="Areas\CSP\Views\CSP\StyleSource.cshtml" />
+    <Content Include="Areas\CSP\Views\CSP\UnsafeInlineOff.cshtml" />
+    <Content Include="Areas\CSP\Views\CSP\CSPwithSRI.cshtml" />
+    <Content Include="Areas\CSP\Views\Shared\Menu.cshtml" />
+    <Content Include="Areas\CSP\Views\CSP\UnsafeInlineOn.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
