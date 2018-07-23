@@ -149,6 +149,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\CSP\Controllers\CSPController.cs" />
     <Compile Include="Areas\CSP\CSPAreaRegistration.cs" />
+    <Compile Include="Areas\FP\Controllers\FeaturePolicyFilter.cs" />
     <Compile Include="Areas\FP\Controllers\FPController.cs" />
     <Compile Include="Areas\FP\FPAreaRegistration.cs" />
     <Compile Include="Areas\SRI\Controllers\SRIController.cs" />

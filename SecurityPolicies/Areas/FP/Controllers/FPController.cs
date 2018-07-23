@@ -20,14 +20,4 @@ namespace SecurityPolicies.Areas.FP.Controllers
             return View();
         }
     }
-
-    public class FeaturePolicyFilter : ActionFilterAttribute
-    {
-        public override void OnActionExecuted(ActionExecutedContext filterContext)
-        {
-            base.OnActionExecuted(filterContext);
-
-            filterContext.HttpContext.Response.Headers.Add("Feature-Policy", "camera 'none'");
-        }
-    }
 }
